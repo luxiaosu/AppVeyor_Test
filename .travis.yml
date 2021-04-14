@@ -5,9 +5,6 @@ services:
  
 before_install: 
   - docker pull luxiaosu/jlsemi-doc-asciidoctor
-  - pwd
-  - ls
-  - ll
   - docker run -it -v ./:/documents/ luxiaosu/jlsemi-doc-asciidoctor
   - docker ps -a
 
