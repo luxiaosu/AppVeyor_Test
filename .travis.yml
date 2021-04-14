@@ -5,6 +5,6 @@ services:
  
 before_install: 
   - docker pull luxiaosu/jlsemi-doc-asciidoctor
-  - dokcer ps -a
+  - docker ps -a
 
 script: gcc hello.c -o hello
