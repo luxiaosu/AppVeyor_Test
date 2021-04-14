@@ -5,7 +5,7 @@ services:
  
 before_install: 
   - docker pull luxiaosu/jlsemi-doc-asciidoctor
-  - docker run -it -v ./:/documents/ luxiaosu/jlsemi-doc-asciidoctor
+  - docker run -it -v $PWD/:/documents/ luxiaosu/jlsemi-doc-asciidoctor
   - docker ps -a
 
 script: gcc hello.c -o hello
